@@ -19,8 +19,8 @@
 
 /* 
     below styles were copied from bootstrap 4.5.0 and renamed to be compatible with blazor
-    '.validation-message' === bootstrap '.invalid-feedback'
-    '.invalid' === bootstrap '.is-invalid'
+    - '.validation-message' == bootstrap '.invalid-feedback'
+    - '.invalid' == bootstrap '.is-invalid'
 */
 
 .validation-message {

@@ -34,8 +34,8 @@
             <div class="form-row">
                 <div class="form-group col">
                     <label>Date of Birth</label>
-                    <InputDate @bind-Value="model.DOB" class="form-control" />
-                    <ValidationMessage For="@(() => model.DOB)" />
+                    <InputDate @bind-Value="model.DateOfBirth" class="form-control" />
+                    <ValidationMessage For="@(() => model.DateOfBirth)" />
                 </div>
                 <div class="form-group col">
                     <label>Email</label>
@@ -95,13 +95,16 @@
         public string Title { get; set; }
 
         [Required]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         [Required]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         [Required]
-        public DateTime? DOB { get; set; }
+        [Display(Name = "Date of Birth")]
+        public DateTime? DateOfBirth { get; set; }
 
         [Required]
         [EmailAddress]
@@ -113,6 +116,7 @@
 
         [Required]
         [CompareProperty("Password")]
+        [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
 
         [Required]
